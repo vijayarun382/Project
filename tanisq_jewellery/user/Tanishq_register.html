@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- bootstraplink -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- bootstraplink -->
+    <!-- iconlink -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- iconlink -->
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- sweetalert -->
+    <title>CaratLane| Tanishq Partnership</title>
+    <!-- title icon start -->
+    <link rel = "icon" href = "../photo/tab.jpg" type = "image/x-icon"> 
+    <!--title icon end -->
+    <link rel="stylesheet" href="../css/Tanishq.css">
+    <script src="../css/Tanishq.css"></script>
+    <style>
+        #facebook,#google,#login1,#email,#password,#confirmpassword{width: 25%;
+             height: 40px;
+             color: white;
+             border: 1px solid rgb(224, 218, 218);
+             border-radius: 5px;
+            }
+        #facebook{ background: linear-gradient(to right, #000099 0%, #0066ff 106%); font-weight: 900;}
+        #google{ background: linear-gradient(to right, red 15%, yellow 40%, green 75%, blue 100%); font-weight: 900;}
+        #login1{color: gray; font-size: 700;}
+        #login1:hover{background-color: rgb(207, 199, 191); color: black;}
+        #email,#password,#confirmpassword{color: gray; padding:10px 15px; cursor: default;}
+        #login > form > p > a{text-decoration: none; color: palevioletred; font-size: small;}
+        #gender,#cell{width: 11%; height: 40px;  border-radius: 5px; cursor: default; padding:10px 15px; border: 1px solid rgb(224, 218, 218);}
+        #gender{margin-right: 20px;}
+        #cell{margin-left:20px;}
+        #login  > p > a{text-decoration: none; color: palevioletred; font-size: small;}
+        #login > form > select > option {color: gray;}
+    </style>
+</head>
+<body>
+    <div id="carat"><center>CaratLane-A Tanishq Partnership</center></div>
+    <div id="home"><center>Try our design for free at home-<a href="try_at_home.html">Know more</a></center></div>
+        <div class="d-flex mb-1" id="flx1">
+                <div class="p-2 flex-grow-1 "></div>
+         </div>
+        
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header" >
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="../Tanishq.html" style="background: linear-gradient(to right, pink 15%, white 85%); "><img src="../photo/diwali.gif" style="width: 150px; height: 60px; margin-top: -15px;"></a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar" style="padding-right: 0px;">
+                    <ul class="nav navbar-nav" style="margin-left: 0px;">
+                      <li><a href="#">RINGS</a></li>
+                      <li><a href="#">EARRINGS</a></li>
+                      <li><a href="#">OTHER JEWELERY</a></li>
+                      <li><a href="#">GIFTING</a></li>
+                      <li><a href="#">TRY@HOME</a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Pincode</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right" style="background: linear-gradient(to right, white 15%, pink 85%); padding-right: 30px; ">
+                        <li><form >
+                            <input type="text" name="search" placeholder="Search">
+                        </form></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-heart"></span></a></li>
+                      <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+
+              <div class="container-fluid text-center" id="login">
+                <legend><h3>Sign Up with CaratLane</h3></legend>
+                <p style="color: gray;">USING</p>
+                    <input type="button" value="Facebook" id="facebook"><br><br>
+                    <input type="button" value="Google" id="google"><br><br>
+                    <legend>OR</legend><br>
+                    <p>Enter your Details</p>
+                <form onSubmit = "return checkPassword(this)">
+                    <input type="email" placeholder="Email" required id="email" title="" name="email"><br><br>
+                    <input type="password" placeholder="Password" required id="password" title="" name="password1"><br><br>
+                    <input type="password" placeholder="Confirm Password" required id="confirmpassword" title="" name="password2"><br><br>
+                    <select name="gender" id="gender" title="">
+                            <option value="" selected hidden>Gender</option>
+                            <option value="male" id="option" style="padding-top: 50px;">Male</option>
+                            <option value="female" id="option">Female</option>
+                    </select><input type="tel" name="phone" pattern="[0-9]{10}" required id="cell" placeholder="Mobile number" title=""><br><br>
+                    <input type="submit" value="Register to Continue" id="login1" title=""><br><br>
+                </form>
+                <p style="font-size: small;">Already have a account? <a href="../user/Tanishq_login.html" style="padding-right: 30px;">Login</a></p>
+          </div>
+
+
+
+              <a href="#" class="float">
+                  <button id="help">Help?</button>
+              </a>
+
+
+
+
+
+
+
+              <footer class="container-fluid text-center">
+                <div class="container">
+                    <table class="table-borderless">
+                      <thead>
+                        <tr>
+                          <th>Know your Jewellery</th>
+                          <th>CaratLane Advantage</th>
+                          <th>Customer Service</th>
+                          <th>About Us</th>
+                          <th>Contact Us</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>DIAMOND GUIDE</td>
+                          <td>15-DAYS RETURN</td>
+                          <td>RETURN POLICY</td>
+                          <td>OUR STORY</td>
+                          <td>1800-102-0103 (TOLL FREE); WORKING</td>
+                        </tr>
+                        <tr>
+                          <td>JEWELLERY GUIDE</td>
+                          <td>FREE SHIPPING</td>
+                          <td>ORDER STATUS</td>
+                          <td>PRESS</td>
+                          <td>HOURS-9AM TO 3PM</td>
+                        </tr>
+                        <tr>
+                          <td>GEMSTONE GUIDE</td>
+                          <td>FINANCING OPTIONS</td>
+                          <td></td>
+                          <td>BLOG</td>
+                          <td>CONTACTUS@CARATLANE.COM</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td>CAREERS@CARATLANE</td>
+                        </tr>
+                      </tbody>
+                    </table><br>
+                    <i style= 'margin-left: 50px;' class='fab'>&#xf082;</i>
+                    <i class='fab'>&#xf16d;</i>
+                    <i class='fab'>&#xf0d3;</i>
+                    <a href="#" style="float: right; border: 1px solid purple; padding: 10px 20px; color: black; margin-right: 150px; border-radius: 5px;">FIND A STORE</a><br><br><br>
+                    <p style="float: left;font-size: 11px;color:purple;margin-left: 50px;">COPYRIGHT CARATLANE @ 2019</p><br><br>
+                    <a href="#" style="margin-left: 50px;">SITE MAP |</a><a href="#">&nbsp;PRIVACY POLICY |</a><a href="#">&nbsp;TERMS & CONDITIONS |</a><a href="#">&nbsp;CORPORATE</a>
+                    <img src="../photo/visa.png">
+                  </div>    
+            </footer>
